@@ -308,10 +308,17 @@ body {
     text-align: center;
 }
 
+.rubric-table th:not(:first-child),
+.rubric-table td:not(:first-child) {
+    min-width: 45px;
+    width: auto;
+}
+
 .rubric-table th:first-child,
 .rubric-table td:first-child {
     text-align: left;
-    width: 52%;
+    width: 40%;
+    min-width: 200px;
 }
 
 .rubric-table th {
@@ -320,10 +327,12 @@ body {
     font-weight: 600;
 }
 
-.rubric-table input[type="checkbox"] {
+.rubric-table input[type="checkbox"],
+.rubric-table input[type="radio"] {
     width: 16px;
     height: 16px;
     accent-color: var(--color5);
+    cursor: pointer;
 }
 
 .modal {
@@ -445,6 +454,29 @@ body.modal-open {
     font-size: 1.1rem;
 }
 
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color5);
+    color: white;
+    border: 2px solid var(--color5);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--color3);
+    border-color: var(--color3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 122, 94, 0.3);
+}
+
 @media print {
     body {
         background: white;
@@ -535,9 +567,16 @@ body.modal-open {
         background: #e0e0e0;
     }
 
-    .modal.printing .rubric-table input[type="radio"] {
+    .modal.printing .rubric-table input[type="radio"],
+    .modal.printing .rubric-table input[type="checkbox"] {
         width: 14px;
         height: 14px;
+    }
+
+    .modal.printing .rubric-table th:first-child,
+    .modal.printing .rubric-table td:first-child {
+        text-align: left;
+        width: auto;
     }
 
     .modal.printing .lead {
@@ -555,6 +594,15 @@ body.modal-open {
         margin-top: 16px;
         margin-bottom: 8px;
         color: #000;
+    }
+
+    .modal.printing input[type="text"],
+    .modal.printing input[type="url"],
+    .modal.printing textarea {
+        border: 1px solid #666 !important;
+        font-size: 10pt !important;
+        padding: 4px 6px !important;
+        background: white !important;
     }
 }
 
@@ -581,5 +629,14 @@ body.modal-open {
     .modal-actions {
         width: 100%;
         justify-content: space-between;
+    }
+
+    .rubric-table {
+        font-size: 0.85rem;
+    }
+
+    .rubric-table th:first-child,
+    .rubric-table td:first-child {
+        min-width: 150px;
     }
 }

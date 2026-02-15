@@ -1,7 +1,7 @@
 <div class="modal-backdrop" data-modal-close></div>
 <div class="modal-dialog" role="document">
     <div class="modal-header">
-        <h2 id="rubrica-coda-title">Matriz de Evaluación CODA</h2>
+        <h2 id="rubrica-coda-title">Evaluación Modelo COdA</h2>
         <div class="modal-actions">
             <button class="btn-print" type="button" onclick="printRubric('rubrica-coda-modal')" aria-label="Imprimir matriz">
                 <span>🖨️</span> Imprimir
@@ -10,280 +10,276 @@
         </div>
     </div>
     <div class="modal-body">
-        <p class="lead">Matriz estructurada en dimensiones, criterios y subcriterios para la evaluación integral de Recursos Educativos Digitales.</p>
+        <p class="lead">Plantilla de evaluación de la calidad de Recursos Educativos Digitales - Modelo COdA adaptado por Dajer (2021)</p>
 
         <div class="rubric-block">
-            <h3>Escala de valoración (ordinal cualitativa)</h3>
+            <h3>Información del Recurso Educativo Digital</h3>
             <table class="rubric-table">
-                <thead>
-                    <tr>
-                        <th>Valor</th>
-                        <th>Nivel de cumplimiento</th>
-                        <th>Descriptor</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
-                        <td><strong>1</strong></td>
-                        <td>No cumple</td>
-                        <td>El criterio no se evidencia en el recurso</td>
+                        <td><strong>Nombre del recurso educativo digital:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-nombre-recurso"></td>
                     </tr>
                     <tr>
-                        <td><strong>2</strong></td>
-                        <td>Cumple parcialmente</td>
-                        <td>Se evidencia de forma limitada</td>
+                        <td><strong>Grado de aplicación:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-grado"></td>
                     </tr>
                     <tr>
-                        <td><strong>3</strong></td>
-                        <td>Cumple</td>
-                        <td>Se evidencia de manera básica</td>
+                        <td><strong>Área de conocimiento:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-area"></td>
                     </tr>
                     <tr>
-                        <td><strong>4</strong></td>
-                        <td>Cumple satisfactoriamente</td>
-                        <td>Se evidencia de forma adecuada</td>
+                        <td><strong>Objetivos de aprendizaje:</strong></td>
+                        <td colspan="5"><textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;" name="coda-objetivos" rows="2"></textarea></td>
                     </tr>
                     <tr>
-                        <td><strong>5</strong></td>
-                        <td>Cumple plenamente</td>
-                        <td>Se evidencia de forma completa y coherente</td>
+                        <td><strong>Nombre del repositorio:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-repositorio"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>URL del recurso educativo digital:</strong></td>
+                        <td colspan="5"><input type="url" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-url"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="rubric-block">
-            <h3> DIMENSIÓN 1: CALIDAD DEL CONTENIDO</h3>
-            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La pertinencia, claridad, coherencia y rigor del contenido del recurso educativo digital.</p>
+            <h3>1. Descripción del recurso educativo digital</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="coda-descripcion" rows="4" placeholder="Escriba la descripción del recurso educativo digital..."></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>2. Modelo de evaluación</h3>
+            <p class="rubric-meta"><strong>Modelo:</strong> COdA (Calidad de Objetos de Aprendizaje)</p>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="coda-modelo-descripcion" rows="3" placeholder="Descripción del modelo..."></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>3. Criterios de evaluación del modelo</h3>
+            <p class="rubric-meta">Plantilla de evaluación de la calidad (Escala: 1-5, N/A = No Aplica)</p>
+            
             <table class="rubric-table">
                 <thead>
                     <tr>
-                        <th>Criterio / Subcriterios</th>
+                        <th>Criterio</th>
                         <th>1</th>
                         <th>2</th>
                         <th>3</th>
                         <th>4</th>
                         <th>5</th>
+                        <th>N/A</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Pertinencia del contenido:</strong> El contenido corresponde al área y grado</td>
-                        <td><input type="radio" name="coda-d1-pertinencia" value="1" aria-label="Pertinencia nivel 1"></td>
-                        <td><input type="radio" name="coda-d1-pertinencia" value="2" aria-label="Pertinencia nivel 2"></td>
-                        <td><input type="radio" name="coda-d1-pertinencia" value="3" aria-label="Pertinencia nivel 3"></td>
-                        <td><input type="radio" name="coda-d1-pertinencia" value="4" aria-label="Pertinencia nivel 4"></td>
-                        <td><input type="radio" name="coda-d1-pertinencia" value="5" aria-label="Pertinencia nivel 5"></td>
+                        <td><strong>1. Objetivos y coherencia didáctica</strong></td>
+                        <td><input type="radio" name="coda-c1" value="1"></td>
+                        <td><input type="radio" name="coda-c1" value="2"></td>
+                        <td><input type="radio" name="coda-c1" value="3"></td>
+                        <td><input type="radio" name="coda-c1" value="4"></td>
+                        <td><input type="radio" name="coda-c1" value="5"></td>
+                        <td><input type="radio" name="coda-c1" value="NA"></td>
                     </tr>
                     <tr>
-                        <td><strong>Claridad del contenido:</strong> La información es comprensible para el estudiante</td>
-                        <td><input type="radio" name="coda-d1-claridad" value="1" aria-label="Claridad nivel 1"></td>
-                        <td><input type="radio" name="coda-d1-claridad" value="2" aria-label="Claridad nivel 2"></td>
-                        <td><input type="radio" name="coda-d1-claridad" value="3" aria-label="Claridad nivel 3"></td>
-                        <td><input type="radio" name="coda-d1-claridad" value="4" aria-label="Claridad nivel 4"></td>
-                        <td><input type="radio" name="coda-d1-claridad" value="5" aria-label="Claridad nivel 5"></td>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c1-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>2. Calidad de los contenidos</strong></td>
+                        <td><input type="radio" name="coda-c2" value="1"></td>
+                        <td><input type="radio" name="coda-c2" value="2"></td>
+                        <td><input type="radio" name="coda-c2" value="3"></td>
+                        <td><input type="radio" name="coda-c2" value="4"></td>
+                        <td><input type="radio" name="coda-c2" value="5"></td>
+                        <td><input type="radio" name="coda-c2" value="NA"></td>
                     </tr>
                     <tr>
-                        <td><strong>Coherencia del contenido:</strong> Existe relación lógica entre los temas</td>
-                        <td><input type="radio" name="coda-d1-coherencia" value="1" aria-label="Coherencia nivel 1"></td>
-                        <td><input type="radio" name="coda-d1-coherencia" value="2" aria-label="Coherencia nivel 2"></td>
-                        <td><input type="radio" name="coda-d1-coherencia" value="3" aria-label="Coherencia nivel 3"></td>
-                        <td><input type="radio" name="coda-d1-coherencia" value="4" aria-label="Coherencia nivel 4"></td>
-                        <td><input type="radio" name="coda-d1-coherencia" value="5" aria-label="Coherencia nivel 5"></td>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c2-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>3. Capacidad de generar reflexión, críticas e innovación</strong></td>
+                        <td><input type="radio" name="coda-c3" value="1"></td>
+                        <td><input type="radio" name="coda-c3" value="2"></td>
+                        <td><input type="radio" name="coda-c3" value="3"></td>
+                        <td><input type="radio" name="coda-c3" value="4"></td>
+                        <td><input type="radio" name="coda-c3" value="5"></td>
+                        <td><input type="radio" name="coda-c3" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c3-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>4. Interactividad y adaptabilidad</strong></td>
+                        <td><input type="radio" name="coda-c4" value="1"></td>
+                        <td><input type="radio" name="coda-c4" value="2"></td>
+                        <td><input type="radio" name="coda-c4" value="3"></td>
+                        <td><input type="radio" name="coda-c4" value="4"></td>
+                        <td><input type="radio" name="coda-c4" value="5"></td>
+                        <td><input type="radio" name="coda-c4" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c4-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>5. Motivación</strong></td>
+                        <td><input type="radio" name="coda-c5" value="1"></td>
+                        <td><input type="radio" name="coda-c5" value="2"></td>
+                        <td><input type="radio" name="coda-c5" value="3"></td>
+                        <td><input type="radio" name="coda-c5" value="4"></td>
+                        <td><input type="radio" name="coda-c5" value="5"></td>
+                        <td><input type="radio" name="coda-c5" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c5-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>6. Formato y diseño</strong></td>
+                        <td><input type="radio" name="coda-c6" value="1"></td>
+                        <td><input type="radio" name="coda-c6" value="2"></td>
+                        <td><input type="radio" name="coda-c6" value="3"></td>
+                        <td><input type="radio" name="coda-c6" value="4"></td>
+                        <td><input type="radio" name="coda-c6" value="5"></td>
+                        <td><input type="radio" name="coda-c6" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c6-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>7. Usabilidad</strong></td>
+                        <td><input type="radio" name="coda-c7" value="1"></td>
+                        <td><input type="radio" name="coda-c7" value="2"></td>
+                        <td><input type="radio" name="coda-c7" value="3"></td>
+                        <td><input type="radio" name="coda-c7" value="4"></td>
+                        <td><input type="radio" name="coda-c7" value="5"></td>
+                        <td><input type="radio" name="coda-c7" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c7-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>8. Accesibilidad</strong></td>
+                        <td><input type="radio" name="coda-c8" value="1"></td>
+                        <td><input type="radio" name="coda-c8" value="2"></td>
+                        <td><input type="radio" name="coda-c8" value="3"></td>
+                        <td><input type="radio" name="coda-c8" value="4"></td>
+                        <td><input type="radio" name="coda-c8" value="5"></td>
+                        <td><input type="radio" name="coda-c8" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c8-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>9. Reusabilidad</strong></td>
+                        <td><input type="radio" name="coda-c9" value="1"></td>
+                        <td><input type="radio" name="coda-c9" value="2"></td>
+                        <td><input type="radio" name="coda-c9" value="3"></td>
+                        <td><input type="radio" name="coda-c9" value="4"></td>
+                        <td><input type="radio" name="coda-c9" value="5"></td>
+                        <td><input type="radio" name="coda-c9" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c9-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>10. Interoperabilidad</strong></td>
+                        <td><input type="radio" name="coda-c10" value="1"></td>
+                        <td><input type="radio" name="coda-c10" value="2"></td>
+                        <td><input type="radio" name="coda-c10" value="3"></td>
+                        <td><input type="radio" name="coda-c10" value="4"></td>
+                        <td><input type="radio" name="coda-c10" value="5"></td>
+                        <td><input type="radio" name="coda-c10" value="NA"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="coda-c10-notas" rows="2"></textarea>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="rubric-block">
-            <h3> DIMENSIÓN 2: DISEÑO PEDAGÓGICO</h3>
-            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La coherencia entre el recurso, los objetivos de aprendizaje y las estrategias didácticas.</p>
+            <h3>4. Resultados de la evaluación</h3>
             <table class="rubric-table">
-                <thead>
-                    <tr>
-                        <th>Criterio / Subcriterios</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Objetivos de aprendizaje:</strong> El recurso responde a objetivos claros</td>
-                        <td><input type="radio" name="coda-d2-objetivos" value="1" aria-label="Objetivos nivel 1"></td>
-                        <td><input type="radio" name="coda-d2-objetivos" value="2" aria-label="Objetivos nivel 2"></td>
-                        <td><input type="radio" name="coda-d2-objetivos" value="3" aria-label="Objetivos nivel 3"></td>
-                        <td><input type="radio" name="coda-d2-objetivos" value="4" aria-label="Objetivos nivel 4"></td>
-                        <td><input type="radio" name="coda-d2-objetivos" value="5" aria-label="Objetivos nivel 5"></td>
+                        <td><strong>Puntuación final:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-puntuacion"></td>
                     </tr>
                     <tr>
-                        <td><strong>Estrategia didáctica:</strong> Promueve el aprendizaje activo</td>
-                        <td><input type="radio" name="coda-d2-estrategia" value="1" aria-label="Estrategia nivel 1"></td>
-                        <td><input type="radio" name="coda-d2-estrategia" value="2" aria-label="Estrategia nivel 2"></td>
-                        <td><input type="radio" name="coda-d2-estrategia" value="3" aria-label="Estrategia nivel 3"></td>
-                        <td><input type="radio" name="coda-d2-estrategia" value="4" aria-label="Estrategia nivel 4"></td>
-                        <td><input type="radio" name="coda-d2-estrategia" value="5" aria-label="Estrategia nivel 5"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Desarrollo de competencias:</strong> Favorece competencias del área</td>
-                        <td><input type="radio" name="coda-d2-competencias" value="1" aria-label="Competencias nivel 1"></td>
-                        <td><input type="radio" name="coda-d2-competencias" value="2" aria-label="Competencias nivel 2"></td>
-                        <td><input type="radio" name="coda-d2-competencias" value="3" aria-label="Competencias nivel 3"></td>
-                        <td><input type="radio" name="coda-d2-competencias" value="4" aria-label="Competencias nivel 4"></td>
-                        <td><input type="radio" name="coda-d2-competencias" value="5" aria-label="Competencias nivel 5"></td>
+                        <td><strong>Conclusiones de la evaluación:</strong></td>
+                        <td colspan="5"><textarea style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="coda-conclusiones" rows="4"></textarea></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="rubric-block">
-            <h3> DIMENSIÓN 3: COMUNICACIÓN Y MOTIVACIÓN</h3>
-            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La forma en que el recurso comunica la información y motiva al estudiante.</p>
             <table class="rubric-table">
-                <thead>
-                    <tr>
-                        <th>Criterio / Subcriterios</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Lenguaje:</strong> Lenguaje adecuado al nivel educativo</td>
-                        <td><input type="radio" name="coda-d3-lenguaje" value="1" aria-label="Lenguaje nivel 1"></td>
-                        <td><input type="radio" name="coda-d3-lenguaje" value="2" aria-label="Lenguaje nivel 2"></td>
-                        <td><input type="radio" name="coda-d3-lenguaje" value="3" aria-label="Lenguaje nivel 3"></td>
-                        <td><input type="radio" name="coda-d3-lenguaje" value="4" aria-label="Lenguaje nivel 4"></td>
-                        <td><input type="radio" name="coda-d3-lenguaje" value="5" aria-label="Lenguaje nivel 5"></td>
+                        <td><strong>Elaborado por:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-elaborado" placeholder="Nombre del(os) estudiante(s)"></td>
                     </tr>
                     <tr>
-                        <td><strong>Motivación:</strong> Despierta interés y participación</td>
-                        <td><input type="radio" name="coda-d3-motivacion" value="1" aria-label="Motivación nivel 1"></td>
-                        <td><input type="radio" name="coda-d3-motivacion" value="2" aria-label="Motivación nivel 2"></td>
-                        <td><input type="radio" name="coda-d3-motivacion" value="3" aria-label="Motivación nivel 3"></td>
-                        <td><input type="radio" name="coda-d3-motivacion" value="4" aria-label="Motivación nivel 4"></td>
-                        <td><input type="radio" name="coda-d3-motivacion" value="5" aria-label="Motivación nivel 5"></td>
+                        <td><strong>Revisado por:</strong></td>
+                        <td colspan="5"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="coda-revisado" placeholder="Nombre del profesor"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="rubric-block">
-            <h3> DIMENSIÓN 4: DISEÑO VISUAL Y USABILIDAD</h3>
-            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La organización visual y facilidad de uso del recurso.</p>
-            <table class="rubric-table">
-                <thead>
-                    <tr>
-                        <th>Criterio / Subcriterios</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Diseño visual:</strong> Organización clara de elementos</td>
-                        <td><input type="radio" name="coda-d4-diseno" value="1" aria-label="Diseño visual nivel 1"></td>
-                        <td><input type="radio" name="coda-d4-diseno" value="2" aria-label="Diseño visual nivel 2"></td>
-                        <td><input type="radio" name="coda-d4-diseno" value="3" aria-label="Diseño visual nivel 3"></td>
-                        <td><input type="radio" name="coda-d4-diseno" value="4" aria-label="Diseño visual nivel 4"></td>
-                        <td><input type="radio" name="coda-d4-diseno" value="5" aria-label="Diseño visual nivel 5"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Usabilidad:</strong> Navegación intuitiva</td>
-                        <td><input type="radio" name="coda-d4-usabilidad" value="1" aria-label="Usabilidad nivel 1"></td>
-                        <td><input type="radio" name="coda-d4-usabilidad" value="2" aria-label="Usabilidad nivel 2"></td>
-                        <td><input type="radio" name="coda-d4-usabilidad" value="3" aria-label="Usabilidad nivel 3"></td>
-                        <td><input type="radio" name="coda-d4-usabilidad" value="4" aria-label="Usabilidad nivel 4"></td>
-                        <td><input type="radio" name="coda-d4-usabilidad" value="5" aria-label="Usabilidad nivel 5"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Instrucciones:</strong> Indicaciones claras de uso</td>
-                        <td><input type="radio" name="coda-d4-instrucciones" value="1" aria-label="Instrucciones nivel 1"></td>
-                        <td><input type="radio" name="coda-d4-instrucciones" value="2" aria-label="Instrucciones nivel 2"></td>
-                        <td><input type="radio" name="coda-d4-instrucciones" value="3" aria-label="Instrucciones nivel 3"></td>
-                        <td><input type="radio" name="coda-d4-instrucciones" value="4" aria-label="Instrucciones nivel 4"></td>
-                        <td><input type="radio" name="coda-d4-instrucciones" value="5" aria-label="Instrucciones nivel 5"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <p style="text-align: center; font-style: italic; color: var(--ink-soft); margin: 12px 0;">
+                Modelo COdA adaptado por Dajer (2021)
+            </p>
         </div>
 
         <div class="rubric-block">
-            <h3> DIMENSIÓN 5: ACCESIBILIDAD</h3>
-            <p class="rubric-meta"><strong>Qué se evalúa:</strong> El acceso al recurso desde diferentes condiciones y dispositivos.</p>
-            <table class="rubric-table">
-                <thead>
-                    <tr>
-                        <th>Criterio / Subcriterios</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Acceso tecnológico:</strong> Funciona en distintos dispositivos</td>
-                        <td><input type="radio" name="coda-d5-acceso" value="1" aria-label="Acceso tecnológico nivel 1"></td>
-                        <td><input type="radio" name="coda-d5-acceso" value="2" aria-label="Acceso tecnológico nivel 2"></td>
-                        <td><input type="radio" name="coda-d5-acceso" value="3" aria-label="Acceso tecnológico nivel 3"></td>
-                        <td><input type="radio" name="coda-d5-acceso" value="4" aria-label="Acceso tecnológico nivel 4"></td>
-                        <td><input type="radio" name="coda-d5-acceso" value="5" aria-label="Acceso tecnológico nivel 5"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Inclusión:</strong> Considera principios básicos de accesibilidad</td>
-                        <td><input type="radio" name="coda-d5-inclusion" value="1" aria-label="Inclusión nivel 1"></td>
-                        <td><input type="radio" name="coda-d5-inclusion" value="2" aria-label="Inclusión nivel 2"></td>
-                        <td><input type="radio" name="coda-d5-inclusion" value="3" aria-label="Inclusión nivel 3"></td>
-                        <td><input type="radio" name="coda-d5-inclusion" value="4" aria-label="Inclusión nivel 4"></td>
-                        <td><input type="radio" name="coda-d5-inclusion" value="5" aria-label="Inclusión nivel 5"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Ventajas de la aplicación del modelo de evaluación:</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="coda-ventajas" rows="3"></textarea>
         </div>
 
         <div class="rubric-block">
-            <h3> DIMENSIÓN 6: CUMPLIMIENTO NORMATIVO Y TÉCNICO</h3>
-            <p class="rubric-meta"><strong>Qué se evalúa:</strong> El cumplimiento de estándares técnicos, legales y normativos.</p>
-            <table class="rubric-table">
-                <thead>
-                    <tr>
-                        <th>Criterio / Subcriterios</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Legalidad:</strong> Respeta derechos de autor y licencias</td>
-                        <td><input type="radio" name="coda-d6-legalidad" value="1" aria-label="Legalidad nivel 1"></td>
-                        <td><input type="radio" name="coda-d6-legalidad" value="2" aria-label="Legalidad nivel 2"></td>
-                        <td><input type="radio" name="coda-d6-legalidad" value="3" aria-label="Legalidad nivel 3"></td>
-                        <td><input type="radio" name="coda-d6-legalidad" value="4" aria-label="Legalidad nivel 4"></td>
-                        <td><input type="radio" name="coda-d6-legalidad" value="5" aria-label="Legalidad nivel 5"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Estándares técnicos:</strong> Cumple estándares de calidad técnica</td>
-                        <td><input type="radio" name="coda-d6-estandares" value="1" aria-label="Estándares técnicos nivel 1"></td>
-                        <td><input type="radio" name="coda-d6-estandares" value="2" aria-label="Estándares técnicos nivel 2"></td>
-                        <td><input type="radio" name="coda-d6-estandares" value="3" aria-label="Estándares técnicos nivel 3"></td>
-                        <td><input type="radio" name="coda-d6-estandares" value="4" aria-label="Estándares técnicos nivel 4"></td>
-                        <td><input type="radio" name="coda-d6-estandares" value="5" aria-label="Estándares técnicos nivel 5"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Desventajas de la aplicación del modelo de evaluación:</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="coda-desventajas" rows="3"></textarea>
         </div>
     </div>
 </div>
