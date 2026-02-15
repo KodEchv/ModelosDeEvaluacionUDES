@@ -1,0 +1,347 @@
+<div class="modal-backdrop" data-modal-close></div>
+<div class="modal-dialog" role="document">
+    <div class="modal-header">
+        <h2 id="rubrica-lori-title">Rúbrica LORI</h2>
+        <div class="modal-actions">
+            <button class="btn-print" type="button" onclick="printRubric('rubrica-lori-modal')" aria-label="Imprimir rúbrica">
+                <span>🖨️</span> Imprimir
+            </button>
+            <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">✕</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <p class="lead">Registro de evaluación con escala Likert (1 a 5) para cada indicador.</p>
+
+        <div class="rubric-block">
+            <h3>Criterio 1: Calidad del contenido</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La pertinencia, exactitud, claridad
+                y actualización del contenido del recurso educativo digital.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El contenido es científicamente correcto y actualizado</td>
+                        <td><input type="radio" name="lori-c1-i1" value="1" aria-label="Criterio 1 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c1-i1" value="2" aria-label="Criterio 1 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c1-i1" value="3" aria-label="Criterio 1 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c1-i1" value="4" aria-label="Criterio 1 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c1-i1" value="5" aria-label="Criterio 1 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>La información es clara y comprensible para el grado</td>
+                        <td><input type="radio" name="lori-c1-i2" value="1" aria-label="Criterio 1 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c1-i2" value="2" aria-label="Criterio 1 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c1-i2" value="3" aria-label="Criterio 1 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c1-i2" value="4" aria-label="Criterio 1 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c1-i2" value="5" aria-label="Criterio 1 indicador 2 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>El contenido se relaciona con el área y el tema trabajado</td>
+                        <td><input type="radio" name="lori-c1-i3" value="1" aria-label="Criterio 1 indicador 3 nivel 1"></td>
+                        <td><input type="radio" name="lori-c1-i3" value="2" aria-label="Criterio 1 indicador 3 nivel 2"></td>
+                        <td><input type="radio" name="lori-c1-i3" value="3" aria-label="Criterio 1 indicador 3 nivel 3"></td>
+                        <td><input type="radio" name="lori-c1-i3" value="4" aria-label="Criterio 1 indicador 3 nivel 4"></td>
+                        <td><input type="radio" name="lori-c1-i3" value="5" aria-label="Criterio 1 indicador 3 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 2: Alineación con los objetivos de aprendizaje</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La coherencia entre el recurso,
+                los objetivos de aprendizaje y los contenidos curriculares.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El recurso responde a los objetivos de aprendizaje propuestos</td>
+                        <td><input type="radio" name="lori-c2-i1" value="1" aria-label="Criterio 2 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c2-i1" value="2" aria-label="Criterio 2 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c2-i1" value="3" aria-label="Criterio 2 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c2-i1" value="4" aria-label="Criterio 2 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c2-i1" value="5" aria-label="Criterio 2 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>Facilita el logro de competencias del área</td>
+                        <td><input type="radio" name="lori-c2-i2" value="1" aria-label="Criterio 2 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c2-i2" value="2" aria-label="Criterio 2 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c2-i2" value="3" aria-label="Criterio 2 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c2-i2" value="4" aria-label="Criterio 2 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c2-i2" value="5" aria-label="Criterio 2 indicador 2 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 3: Retroalimentación</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La presencia y calidad de la
+                retroalimentación que ofrece el recurso al estudiante.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El recurso brinda retroalimentación clara y comprensible</td>
+                        <td><input type="radio" name="lori-c3-i1" value="1" aria-label="Criterio 3 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c3-i1" value="2" aria-label="Criterio 3 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c3-i1" value="3" aria-label="Criterio 3 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c3-i1" value="4" aria-label="Criterio 3 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c3-i1" value="5" aria-label="Criterio 3 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>La retroalimentación favorece la mejora del aprendizaje</td>
+                        <td><input type="radio" name="lori-c3-i2" value="1" aria-label="Criterio 3 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c3-i2" value="2" aria-label="Criterio 3 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c3-i2" value="3" aria-label="Criterio 3 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c3-i2" value="4" aria-label="Criterio 3 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c3-i2" value="5" aria-label="Criterio 3 indicador 2 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 4: Motivación</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La capacidad del recurso para
+                despertar interés, participación y compromiso del estudiante.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El recurso resulta atractivo para el estudiante</td>
+                        <td><input type="radio" name="lori-c4-i1" value="1" aria-label="Criterio 4 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c4-i1" value="2" aria-label="Criterio 4 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c4-i1" value="3" aria-label="Criterio 4 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c4-i1" value="4" aria-label="Criterio 4 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c4-i1" value="5" aria-label="Criterio 4 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>Promueve la participación activa</td>
+                        <td><input type="radio" name="lori-c4-i2" value="1" aria-label="Criterio 4 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c4-i2" value="2" aria-label="Criterio 4 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c4-i2" value="3" aria-label="Criterio 4 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c4-i2" value="4" aria-label="Criterio 4 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c4-i2" value="5" aria-label="Criterio 4 indicador 2 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 5: Diseño y usabilidad</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La facilidad de uso, organización
+                visual y navegación del recurso.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El diseño es claro y organizado</td>
+                        <td><input type="radio" name="lori-c5-i1" value="1" aria-label="Criterio 5 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c5-i1" value="2" aria-label="Criterio 5 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c5-i1" value="3" aria-label="Criterio 5 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c5-i1" value="4" aria-label="Criterio 5 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c5-i1" value="5" aria-label="Criterio 5 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>La navegación es intuitiva</td>
+                        <td><input type="radio" name="lori-c5-i2" value="1" aria-label="Criterio 5 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c5-i2" value="2" aria-label="Criterio 5 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c5-i2" value="3" aria-label="Criterio 5 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c5-i2" value="4" aria-label="Criterio 5 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c5-i2" value="5" aria-label="Criterio 5 indicador 2 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 6: Usabilidad</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La facilidad con la que el usuario
+                interactúa con el recurso, navega y comprende su funcionamiento.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>La navegación es intuitiva y fácil de comprender</td>
+                        <td><input type="radio" name="lori-c6-i1" value="1" aria-label="Criterio 6 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c6-i1" value="2" aria-label="Criterio 6 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c6-i1" value="3" aria-label="Criterio 6 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c6-i1" value="4" aria-label="Criterio 6 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c6-i1" value="5" aria-label="Criterio 6 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>El recurso no presenta dificultades técnicas para su uso</td>
+                        <td><input type="radio" name="lori-c6-i2" value="1" aria-label="Criterio 6 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c6-i2" value="2" aria-label="Criterio 6 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c6-i2" value="3" aria-label="Criterio 6 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c6-i2" value="4" aria-label="Criterio 6 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c6-i2" value="5" aria-label="Criterio 6 indicador 2 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>Las instrucciones de uso son claras</td>
+                        <td><input type="radio" name="lori-c6-i3" value="1" aria-label="Criterio 6 indicador 3 nivel 1"></td>
+                        <td><input type="radio" name="lori-c6-i3" value="2" aria-label="Criterio 6 indicador 3 nivel 2"></td>
+                        <td><input type="radio" name="lori-c6-i3" value="3" aria-label="Criterio 6 indicador 3 nivel 3"></td>
+                        <td><input type="radio" name="lori-c6-i3" value="4" aria-label="Criterio 6 indicador 3 nivel 4"></td>
+                        <td><input type="radio" name="lori-c6-i3" value="5" aria-label="Criterio 6 indicador 3 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 7: Accesibilidad</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> El grado en que el recurso permite
+                el acceso a estudiantes con diversas necesidades y contextos tecnológicos.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El recurso considera principios básicos de accesibilidad</td>
+                        <td><input type="radio" name="lori-c7-i1" value="1" aria-label="Criterio 7 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c7-i1" value="2" aria-label="Criterio 7 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c7-i1" value="3" aria-label="Criterio 7 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c7-i1" value="4" aria-label="Criterio 7 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c7-i1" value="5" aria-label="Criterio 7 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>Puede utilizarse en diferentes dispositivos</td>
+                        <td><input type="radio" name="lori-c7-i2" value="1" aria-label="Criterio 7 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c7-i2" value="2" aria-label="Criterio 7 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c7-i2" value="3" aria-label="Criterio 7 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c7-i2" value="4" aria-label="Criterio 7 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c7-i2" value="5" aria-label="Criterio 7 indicador 2 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 8: Reusabilidad</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> La posibilidad de reutilizar el
+                recurso en distintos contextos educativos.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El recurso puede adaptarse a otros grados o áreas</td>
+                        <td><input type="radio" name="lori-c8-i1" value="1" aria-label="Criterio 8 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c8-i1" value="2" aria-label="Criterio 8 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c8-i1" value="3" aria-label="Criterio 8 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c8-i1" value="4" aria-label="Criterio 8 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c8-i1" value="5" aria-label="Criterio 8 indicador 1 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterio 9: Cumplimiento de estándares</h3>
+            <p class="rubric-meta"><strong>¿Qué se mide?</strong> El cumplimiento de estándares
+                técnicos, pedagógicos y legales.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Indicadores</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cumple estándares de usabilidad y accesibilidad</td>
+                        <td><input type="radio" name="lori-c9-i1" value="1" aria-label="Criterio 9 indicador 1 nivel 1"></td>
+                        <td><input type="radio" name="lori-c9-i1" value="2" aria-label="Criterio 9 indicador 1 nivel 2"></td>
+                        <td><input type="radio" name="lori-c9-i1" value="3" aria-label="Criterio 9 indicador 1 nivel 3"></td>
+                        <td><input type="radio" name="lori-c9-i1" value="4" aria-label="Criterio 9 indicador 1 nivel 4"></td>
+                        <td><input type="radio" name="lori-c9-i1" value="5" aria-label="Criterio 9 indicador 1 nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td>Respeta derechos de autor y licencias</td>
+                        <td><input type="radio" name="lori-c9-i2" value="1" aria-label="Criterio 9 indicador 2 nivel 1"></td>
+                        <td><input type="radio" name="lori-c9-i2" value="2" aria-label="Criterio 9 indicador 2 nivel 2"></td>
+                        <td><input type="radio" name="lori-c9-i2" value="3" aria-label="Criterio 9 indicador 2 nivel 3"></td>
+                        <td><input type="radio" name="lori-c9-i2" value="4" aria-label="Criterio 9 indicador 2 nivel 4"></td>
+                        <td><input type="radio" name="lori-c9-i2" value="5" aria-label="Criterio 9 indicador 2 nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

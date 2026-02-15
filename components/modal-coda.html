@@ -1,0 +1,289 @@
+<div class="modal-backdrop" data-modal-close></div>
+<div class="modal-dialog" role="document">
+    <div class="modal-header">
+        <h2 id="rubrica-coda-title">Matriz de Evaluación CODA</h2>
+        <div class="modal-actions">
+            <button class="btn-print" type="button" onclick="printRubric('rubrica-coda-modal')" aria-label="Imprimir matriz">
+                <span>🖨️</span> Imprimir
+            </button>
+            <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">✕</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <p class="lead">Matriz estructurada en dimensiones, criterios y subcriterios para la evaluación integral de Recursos Educativos Digitales.</p>
+
+        <div class="rubric-block">
+            <h3>Escala de valoración (ordinal cualitativa)</h3>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Nivel de cumplimiento</th>
+                        <th>Descriptor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1</strong></td>
+                        <td>No cumple</td>
+                        <td>El criterio no se evidencia en el recurso</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2</strong></td>
+                        <td>Cumple parcialmente</td>
+                        <td>Se evidencia de forma limitada</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3</strong></td>
+                        <td>Cumple</td>
+                        <td>Se evidencia de manera básica</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4</strong></td>
+                        <td>Cumple satisfactoriamente</td>
+                        <td>Se evidencia de forma adecuada</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5</strong></td>
+                        <td>Cumple plenamente</td>
+                        <td>Se evidencia de forma completa y coherente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3> DIMENSIÓN 1: CALIDAD DEL CONTENIDO</h3>
+            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La pertinencia, claridad, coherencia y rigor del contenido del recurso educativo digital.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterio / Subcriterios</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Pertinencia del contenido:</strong> El contenido corresponde al área y grado</td>
+                        <td><input type="radio" name="coda-d1-pertinencia" value="1" aria-label="Pertinencia nivel 1"></td>
+                        <td><input type="radio" name="coda-d1-pertinencia" value="2" aria-label="Pertinencia nivel 2"></td>
+                        <td><input type="radio" name="coda-d1-pertinencia" value="3" aria-label="Pertinencia nivel 3"></td>
+                        <td><input type="radio" name="coda-d1-pertinencia" value="4" aria-label="Pertinencia nivel 4"></td>
+                        <td><input type="radio" name="coda-d1-pertinencia" value="5" aria-label="Pertinencia nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Claridad del contenido:</strong> La información es comprensible para el estudiante</td>
+                        <td><input type="radio" name="coda-d1-claridad" value="1" aria-label="Claridad nivel 1"></td>
+                        <td><input type="radio" name="coda-d1-claridad" value="2" aria-label="Claridad nivel 2"></td>
+                        <td><input type="radio" name="coda-d1-claridad" value="3" aria-label="Claridad nivel 3"></td>
+                        <td><input type="radio" name="coda-d1-claridad" value="4" aria-label="Claridad nivel 4"></td>
+                        <td><input type="radio" name="coda-d1-claridad" value="5" aria-label="Claridad nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Coherencia del contenido:</strong> Existe relación lógica entre los temas</td>
+                        <td><input type="radio" name="coda-d1-coherencia" value="1" aria-label="Coherencia nivel 1"></td>
+                        <td><input type="radio" name="coda-d1-coherencia" value="2" aria-label="Coherencia nivel 2"></td>
+                        <td><input type="radio" name="coda-d1-coherencia" value="3" aria-label="Coherencia nivel 3"></td>
+                        <td><input type="radio" name="coda-d1-coherencia" value="4" aria-label="Coherencia nivel 4"></td>
+                        <td><input type="radio" name="coda-d1-coherencia" value="5" aria-label="Coherencia nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3> DIMENSIÓN 2: DISEÑO PEDAGÓGICO</h3>
+            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La coherencia entre el recurso, los objetivos de aprendizaje y las estrategias didácticas.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterio / Subcriterios</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Objetivos de aprendizaje:</strong> El recurso responde a objetivos claros</td>
+                        <td><input type="radio" name="coda-d2-objetivos" value="1" aria-label="Objetivos nivel 1"></td>
+                        <td><input type="radio" name="coda-d2-objetivos" value="2" aria-label="Objetivos nivel 2"></td>
+                        <td><input type="radio" name="coda-d2-objetivos" value="3" aria-label="Objetivos nivel 3"></td>
+                        <td><input type="radio" name="coda-d2-objetivos" value="4" aria-label="Objetivos nivel 4"></td>
+                        <td><input type="radio" name="coda-d2-objetivos" value="5" aria-label="Objetivos nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estrategia didáctica:</strong> Promueve el aprendizaje activo</td>
+                        <td><input type="radio" name="coda-d2-estrategia" value="1" aria-label="Estrategia nivel 1"></td>
+                        <td><input type="radio" name="coda-d2-estrategia" value="2" aria-label="Estrategia nivel 2"></td>
+                        <td><input type="radio" name="coda-d2-estrategia" value="3" aria-label="Estrategia nivel 3"></td>
+                        <td><input type="radio" name="coda-d2-estrategia" value="4" aria-label="Estrategia nivel 4"></td>
+                        <td><input type="radio" name="coda-d2-estrategia" value="5" aria-label="Estrategia nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Desarrollo de competencias:</strong> Favorece competencias del área</td>
+                        <td><input type="radio" name="coda-d2-competencias" value="1" aria-label="Competencias nivel 1"></td>
+                        <td><input type="radio" name="coda-d2-competencias" value="2" aria-label="Competencias nivel 2"></td>
+                        <td><input type="radio" name="coda-d2-competencias" value="3" aria-label="Competencias nivel 3"></td>
+                        <td><input type="radio" name="coda-d2-competencias" value="4" aria-label="Competencias nivel 4"></td>
+                        <td><input type="radio" name="coda-d2-competencias" value="5" aria-label="Competencias nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3> DIMENSIÓN 3: COMUNICACIÓN Y MOTIVACIÓN</h3>
+            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La forma en que el recurso comunica la información y motiva al estudiante.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterio / Subcriterios</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lenguaje:</strong> Lenguaje adecuado al nivel educativo</td>
+                        <td><input type="radio" name="coda-d3-lenguaje" value="1" aria-label="Lenguaje nivel 1"></td>
+                        <td><input type="radio" name="coda-d3-lenguaje" value="2" aria-label="Lenguaje nivel 2"></td>
+                        <td><input type="radio" name="coda-d3-lenguaje" value="3" aria-label="Lenguaje nivel 3"></td>
+                        <td><input type="radio" name="coda-d3-lenguaje" value="4" aria-label="Lenguaje nivel 4"></td>
+                        <td><input type="radio" name="coda-d3-lenguaje" value="5" aria-label="Lenguaje nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Motivación:</strong> Despierta interés y participación</td>
+                        <td><input type="radio" name="coda-d3-motivacion" value="1" aria-label="Motivación nivel 1"></td>
+                        <td><input type="radio" name="coda-d3-motivacion" value="2" aria-label="Motivación nivel 2"></td>
+                        <td><input type="radio" name="coda-d3-motivacion" value="3" aria-label="Motivación nivel 3"></td>
+                        <td><input type="radio" name="coda-d3-motivacion" value="4" aria-label="Motivación nivel 4"></td>
+                        <td><input type="radio" name="coda-d3-motivacion" value="5" aria-label="Motivación nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3> DIMENSIÓN 4: DISEÑO VISUAL Y USABILIDAD</h3>
+            <p class="rubric-meta"><strong>Qué se evalúa:</strong> La organización visual y facilidad de uso del recurso.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterio / Subcriterios</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Diseño visual:</strong> Organización clara de elementos</td>
+                        <td><input type="radio" name="coda-d4-diseno" value="1" aria-label="Diseño visual nivel 1"></td>
+                        <td><input type="radio" name="coda-d4-diseno" value="2" aria-label="Diseño visual nivel 2"></td>
+                        <td><input type="radio" name="coda-d4-diseno" value="3" aria-label="Diseño visual nivel 3"></td>
+                        <td><input type="radio" name="coda-d4-diseno" value="4" aria-label="Diseño visual nivel 4"></td>
+                        <td><input type="radio" name="coda-d4-diseno" value="5" aria-label="Diseño visual nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Usabilidad:</strong> Navegación intuitiva</td>
+                        <td><input type="radio" name="coda-d4-usabilidad" value="1" aria-label="Usabilidad nivel 1"></td>
+                        <td><input type="radio" name="coda-d4-usabilidad" value="2" aria-label="Usabilidad nivel 2"></td>
+                        <td><input type="radio" name="coda-d4-usabilidad" value="3" aria-label="Usabilidad nivel 3"></td>
+                        <td><input type="radio" name="coda-d4-usabilidad" value="4" aria-label="Usabilidad nivel 4"></td>
+                        <td><input type="radio" name="coda-d4-usabilidad" value="5" aria-label="Usabilidad nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Instrucciones:</strong> Indicaciones claras de uso</td>
+                        <td><input type="radio" name="coda-d4-instrucciones" value="1" aria-label="Instrucciones nivel 1"></td>
+                        <td><input type="radio" name="coda-d4-instrucciones" value="2" aria-label="Instrucciones nivel 2"></td>
+                        <td><input type="radio" name="coda-d4-instrucciones" value="3" aria-label="Instrucciones nivel 3"></td>
+                        <td><input type="radio" name="coda-d4-instrucciones" value="4" aria-label="Instrucciones nivel 4"></td>
+                        <td><input type="radio" name="coda-d4-instrucciones" value="5" aria-label="Instrucciones nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3> DIMENSIÓN 5: ACCESIBILIDAD</h3>
+            <p class="rubric-meta"><strong>Qué se evalúa:</strong> El acceso al recurso desde diferentes condiciones y dispositivos.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterio / Subcriterios</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Acceso tecnológico:</strong> Funciona en distintos dispositivos</td>
+                        <td><input type="radio" name="coda-d5-acceso" value="1" aria-label="Acceso tecnológico nivel 1"></td>
+                        <td><input type="radio" name="coda-d5-acceso" value="2" aria-label="Acceso tecnológico nivel 2"></td>
+                        <td><input type="radio" name="coda-d5-acceso" value="3" aria-label="Acceso tecnológico nivel 3"></td>
+                        <td><input type="radio" name="coda-d5-acceso" value="4" aria-label="Acceso tecnológico nivel 4"></td>
+                        <td><input type="radio" name="coda-d5-acceso" value="5" aria-label="Acceso tecnológico nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inclusión:</strong> Considera principios básicos de accesibilidad</td>
+                        <td><input type="radio" name="coda-d5-inclusion" value="1" aria-label="Inclusión nivel 1"></td>
+                        <td><input type="radio" name="coda-d5-inclusion" value="2" aria-label="Inclusión nivel 2"></td>
+                        <td><input type="radio" name="coda-d5-inclusion" value="3" aria-label="Inclusión nivel 3"></td>
+                        <td><input type="radio" name="coda-d5-inclusion" value="4" aria-label="Inclusión nivel 4"></td>
+                        <td><input type="radio" name="coda-d5-inclusion" value="5" aria-label="Inclusión nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3> DIMENSIÓN 6: CUMPLIMIENTO NORMATIVO Y TÉCNICO</h3>
+            <p class="rubric-meta"><strong>Qué se evalúa:</strong> El cumplimiento de estándares técnicos, legales y normativos.</p>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterio / Subcriterios</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Legalidad:</strong> Respeta derechos de autor y licencias</td>
+                        <td><input type="radio" name="coda-d6-legalidad" value="1" aria-label="Legalidad nivel 1"></td>
+                        <td><input type="radio" name="coda-d6-legalidad" value="2" aria-label="Legalidad nivel 2"></td>
+                        <td><input type="radio" name="coda-d6-legalidad" value="3" aria-label="Legalidad nivel 3"></td>
+                        <td><input type="radio" name="coda-d6-legalidad" value="4" aria-label="Legalidad nivel 4"></td>
+                        <td><input type="radio" name="coda-d6-legalidad" value="5" aria-label="Legalidad nivel 5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Estándares técnicos:</strong> Cumple estándares de calidad técnica</td>
+                        <td><input type="radio" name="coda-d6-estandares" value="1" aria-label="Estándares técnicos nivel 1"></td>
+                        <td><input type="radio" name="coda-d6-estandares" value="2" aria-label="Estándares técnicos nivel 2"></td>
+                        <td><input type="radio" name="coda-d6-estandares" value="3" aria-label="Estándares técnicos nivel 3"></td>
+                        <td><input type="radio" name="coda-d6-estandares" value="4" aria-label="Estándares técnicos nivel 4"></td>
+                        <td><input type="radio" name="coda-d6-estandares" value="5" aria-label="Estándares técnicos nivel 5"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
