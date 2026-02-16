@@ -81,6 +81,8 @@
                                                 role="tab" aria-selected="true" aria-controls="panel-lori">LORI</button>
                                             <button class="tab-button" type="button" data-tab="otro" role="tab"
                                                 aria-selected="false" aria-controls="panel-otro">CODA</button>
+                                            <button class="tab-button" type="button" data-tab="reeves" role="tab"
+                                                aria-selected="false" aria-controls="panel-reeves">Reeves</button>
                                         </div>
                                         <div class="tab-panels">
                                             <section id="panel-lori" class="tab-panel is-active" data-tab-panel="lori"
@@ -201,6 +203,37 @@
                                                 </div>
                                                 <button class="rubric-link" type="button"
                                                     data-modal-open="rubrica-coda-modal">Abrir rúbrica CODA</button>
+                                            </section>
+                                            <section id="panel-reeves" class="tab-panel" data-tab-panel="reeves"
+                                                role="tabpanel">
+                                                <h2>Reeves</h2>
+                                                <div class="info-block">
+                                                    <p><strong>Título:</strong> Reeves</p>
+                                                    <p><strong>Descripción:</strong> Creado en el año 2000, Reeves propone un modelo para la evaluación de Educación Basada en Computadores. Consta de 14 dimensiones pedagógicas basadas en teorías y conceptos de aprendizaje. Estas dimensiones han sido usadas para evaluar cursos en ambientes de e-learning y, si se considera a un curso como un Objeto de Aprendizaje con alto nivel de agregación, este modelo puede usarse para evaluar la calidad desde el punto de vista pedagógico. (Vidal, Segura, & Prieto, sf). Sugiere tres formas de evaluación alternativa en un ambiente virtual: Evaluación cognitiva, evaluación por desempeño y evaluación por carpetas.</p>
+                                                    <h3>Criterios de evaluación</h3>
+                                                    <ul class="criteria-list">
+                                                        <li><strong>Enfoque pedagógico del recurso:</strong> Coherencia con teorías del aprendizaje, enfoque constructivista o significativo y aprendizaje activo.</li>
+                                                        <li><strong>Nivel de interacción:</strong> Estudiante-recurso, estudiante-contenido, retroalimentación.</li>
+                                                        <li><strong>Rol del estudiante:</strong> Autonomía, participación y toma de decisiones.</li>
+                                                        <li><strong>Rol del docente:</strong> Mediador, flexible al orientar y la integración del recurso con la planeación.</li>
+                                                        <li><strong>Integración curricular:</strong> Correspondencia con objetivos de aprendizaje y articulación con contenidos curriculares.</li>
+                                                        <li><strong>Potencial para el aprendizaje significativo:</strong> Conocimientos previos, aplicación y contextualización.</li>
+                                                    </ul>
+                                                    <p><strong>Escala de evaluación:</strong> Escalas descriptivas cualitativas o juicios valorativos argumentados (no numéricos). Escala de 3 niveles: Alto nivel (3), Nivel medio (2), Nivel bajo (1).</p>
+                                                    <p><strong>Metodología:</strong> Análisis reflexivo del recurso a partir de preguntas orientadoras que permiten valorar su coherencia pedagógica, su pertinencia educativa y su contribución al proceso de enseñanza-aprendizaje.</p>
+                                                    <p><strong>Instrumento de valoración:</strong> Guía de análisis pedagógico cualitativo.</p>
+                                                    <div style="margin-top: 16px;">
+                                                        <p><strong>Puntaje máximo:</strong> 18 puntos</p>
+                                                        <p><strong>Interpretación de resultados:</strong></p>
+                                                        <ul class="criteria-list">
+                                                            <li>15–18: Alto valor pedagógico</li>
+                                                            <li>10–14: Valor pedagógico medio</li>
+                                                            <li>6–9: Bajo valor pedagógico</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <button class="rubric-link" type="button"
+                                                    data-modal-open="rubrica-reeves-modal">Abrir rúbrica Reeves</button>
                                             </section>
                                         </div>
                                     </div>
@@ -362,6 +395,12 @@
     <div class="modal" id="rubrica-coda-modal" aria-hidden="true" role="dialog" aria-modal="true"
         aria-labelledby="rubrica-coda-title">
         <!-- Contenido cargado desde components/modal-coda.html -->
+    </div>
+
+    <!-- Modal Reeves - Cargado dinámicamente -->
+    <div class="modal" id="rubrica-reeves-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="rubrica-reeves-title">
+        <!-- Contenido cargado desde components/modal-reeves.html -->
     </div>
 
     <!-- Scripts organizados por funcionalidad -->
