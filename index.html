@@ -87,6 +87,8 @@
                                                 aria-selected="false" aria-controls="panel-furps">FURPS</button>
                                             <button class="tab-button" type="button" data-tab="boehm" role="tab"
                                                 aria-selected="false" aria-controls="panel-boehm">Boehm</button>
+                                            <button class="tab-button" type="button" data-tab="galvis" role="tab"
+                                                aria-selected="false" aria-controls="panel-galvis">Galvis</button>
                                         </div>
                                         <div class="tab-panels">
                                             <section id="panel-lori" class="tab-panel is-active" data-tab-panel="lori"
@@ -300,6 +302,37 @@
                                                 <button class="rubric-link" type="button"
                                                     data-modal-open="rubrica-boehm-modal">Abrir rúbrica Boehm</button>
                                             </section>
+                                            <section id="panel-galvis" class="tab-panel" data-tab-panel="galvis"
+                                                role="tabpanel">
+                                                <h2>Galvis</h2>
+                                                <div class="info-block">
+                                                    <p><strong>Título:</strong> Galvis</p>
+                                                    <p><strong>Descripción:</strong> El modelo de Galvis desarrollado por el investigador y asesor internacional en Tecnologías de Información y Comunicación (TIC), Álvaro Galvis (2000) está orientado a la evaluación de software educativo, integrando aspectos pedagógicos, didácticos y tecnológicos, con el fin de valorar el recurso como mediador del aprendizaje.</p>
+                                                    <h3>Criterios de evaluación</h3>
+                                                    <ul class="criteria-list">
+                                                        <li><strong>Objetivos educativos:</strong> Claridad de los objetivos, coherencia con el nivel educativo y correspondencia con el currículo.</li>
+                                                        <li><strong>Contenidos:</strong> Pertinencia temática, exactitud conceptual y actualización de la información.</li>
+                                                        <li><strong>Metodología didáctica:</strong> Estrategias de enseñanza utilizadas, secuenciación de actividades y adecuación a estilos de aprendizaje.</li>
+                                                        <li><strong>Interacción:</strong> Participación del estudiante, tipos de interacción propuestos y retroalimentación pedagógica.</li>
+                                                        <li><strong>Evaluación del aprendizaje:</strong> Presencia de actividades evaluativas, coherencia con los objetivos y retroalimentación al estudiante.</li>
+                                                        <li><strong>Usabilidad:</strong> Facilidad de uso, diseño de la interfaz y accesibilidad del recurso.</li>
+                                                    </ul>
+                                                    <p><strong>Escala de evaluación:</strong> Escalas cualitativas o mixtas (cualitativas y cuantitativas). Escala de 4 niveles: Excelente (4), Bueno (3), Aceptable (2), Insuficiente (1).</p>
+                                                    <p><strong>Metodología:</strong> Evaluación integral del recurso considerando su coherencia pedagógica, su estructura didáctica y su funcionalidad tecnológica dentro del proceso educativo.</p>
+                                                    <p><strong>Instrumento de valoración:</strong> Guía de evaluación de software educativo.</p>
+                                                    <div style="margin-top: 16px;">
+                                                        <p><strong>Puntaje máximo:</strong> 24 puntos</p>
+                                                        <p><strong>Interpretación de resultados:</strong></p>
+                                                        <ul class="criteria-list">
+                                                            <li>19–24: Alta calidad educativa</li>
+                                                            <li>13–18: Calidad educativa media</li>
+                                                            <li>6–12: Baja calidad educativa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <button class="rubric-link" type="button"
+                                                    data-modal-open="rubrica-galvis-modal">Abrir rúbrica Galvis</button>
+                                            </section>
                                         </div>
                                     </div>
                                 </section>
@@ -478,6 +511,12 @@
     <div class="modal" id="rubrica-boehm-modal" aria-hidden="true" role="dialog" aria-modal="true"
         aria-labelledby="rubrica-boehm-title">
         <!-- Contenido cargado desde components/modal-boehm.html -->
+    </div>
+
+    <!-- Modal Galvis - Cargado dinámicamente -->
+    <div class="modal" id="rubrica-galvis-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="rubrica-galvis-title">
+        <!-- Contenido cargado desde components/modal-galvis.html -->
     </div>
 
     <!-- Scripts organizados por funcionalidad -->

@@ -1,0 +1,294 @@
+<div class="modal-backdrop" data-modal-close></div>
+<div class="modal-dialog" role="document">
+    <div class="modal-header">
+        <h2 id="rubrica-galvis-title">Evaluación Modelo Galvis</h2>
+        <div class="modal-actions">
+            <button class="btn-print" type="button" onclick="printRubric('rubrica-galvis-modal')" aria-label="Imprimir matriz">
+                <span>🖨️</span> Imprimir
+            </button>
+            <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">✕</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <p class="lead">Guía de evaluación de software educativo - Modelo Galvis (Álvaro Galvis, 2000)</p>
+
+        <div class="rubric-block">
+            <h3>Información del Recurso Educativo Digital</h3>
+            <table class="rubric-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Nombre del recurso educativo digital:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-nombre-recurso"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grado de aplicación:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-grado"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Área de conocimiento:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-area"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Objetivos de aprendizaje:</strong></td>
+                        <td colspan="4"><textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;" name="galvis-objetivos" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nombre del repositorio:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-repositorio"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>URL del recurso educativo digital:</strong></td>
+                        <td colspan="4"><input type="url" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-url"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Descripción del recurso educativo digital</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="galvis-descripcion" rows="4" placeholder="Escriba la descripción del recurso educativo digital..."></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Modelo de evaluación</h3>
+            <p class="rubric-meta"><strong>Modelo:</strong> Galvis (2000)</p>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="galvis-modelo-descripcion" rows="3" placeholder="Descripción del modelo..."></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterios de evaluación del modelo</h3>
+            <p class="rubric-meta">Escala de valoración: 4 = Excelente | 3 = Bueno | 2 = Aceptable | 1 = Insuficiente</p>
+            <p class="rubric-meta" style="margin-top: 8px;">
+                <strong>Puntaje máximo:</strong> 24 puntos<br>
+                <strong>Interpretación:</strong> 19–24 Alta calidad educativa | 13–18 Calidad educativa media | 6–12 Baja calidad educativa
+            </p>
+            
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Criterio</th>
+                        <th style="width: 18%;">4 - Excelente</th>
+                        <th style="width: 18%;">3 - Bueno</th>
+                        <th style="width: 18%;">2 - Aceptable</th>
+                        <th style="width: 18%;">1 - Insuficiente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Objetivos educativos</strong></td>
+                        <td>
+                            <input type="radio" name="galvis-c1" value="4">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Claros y coherentes</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c1" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Claros</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c1" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Poco claros</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c1" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Inexistentes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="galvis-c1-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>2. Contenidos</strong></td>
+                        <td>
+                            <input type="radio" name="galvis-c2" value="4">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Pertinentes y actualizados</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c2" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Pertinentes</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c2" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Parciales</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c2" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Inadecuados</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="galvis-c2-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>3. Metodología</strong></td>
+                        <td>
+                            <input type="radio" name="galvis-c3" value="4">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Estrategias activas</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c3" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Estrategias mixtas</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c3" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Tradicionales</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c3" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Sin metodología</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="galvis-c3-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>4. Interacción</strong></td>
+                        <td>
+                            <input type="radio" name="galvis-c4" value="4">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Alta participación</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c4" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Participación media</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c4" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Baja participación</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c4" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Nula</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="galvis-c4-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>5. Evaluación del aprendizaje</strong></td>
+                        <td>
+                            <input type="radio" name="galvis-c5" value="4">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Evaluación clara y formativa</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c5" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Evaluación básica</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c5" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Evaluación limitada</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c5" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">No evalúa</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="galvis-c5-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>6. Usabilidad</strong></td>
+                        <td>
+                            <input type="radio" name="galvis-c6" value="4">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Diseño intuitivo</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c6" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Diseño adecuado</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c6" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Diseño confuso</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="galvis-c6" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Diseño inadecuado</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="galvis-c6-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Resultados de la evaluación</h3>
+            <table class="rubric-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Puntuación final:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-puntuacion" placeholder="Ej: 20/24 puntos"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nivel de calidad educativa:</strong></td>
+                        <td colspan="4">
+                            <select style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-nivel">
+                                <option value="">Seleccione...</option>
+                                <option value="alta">Alta calidad educativa (19-24 puntos)</option>
+                                <option value="media">Calidad educativa media (13-18 puntos)</option>
+                                <option value="baja">Baja calidad educativa (6-12 puntos)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Conclusiones de la evaluación:</strong></td>
+                        <td colspan="4"><textarea style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="galvis-conclusiones" rows="4"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <table class="rubric-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Elaborado por:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-elaborado" placeholder="Nombre del(os) estudiante(s)"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revisado por:</strong></td>
+                        <td colspan="4"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="galvis-revisado" placeholder="Nombre del profesor"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <p style="text-align: center; font-style: italic; color: var(--ink-soft); margin: 12px 0;">
+                Modelo Galvis (Álvaro Galvis, 2000)
+            </p>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Ventajas de la aplicación del modelo de evaluación:</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="galvis-ventajas" rows="3"></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Desventajas de la aplicación del modelo de evaluación:</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="galvis-desventajas" rows="3"></textarea>
+        </div>
+    </div>
+</div>
