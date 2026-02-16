@@ -83,6 +83,8 @@
                                                 aria-selected="false" aria-controls="panel-otro">CODA</button>
                                             <button class="tab-button" type="button" data-tab="reeves" role="tab"
                                                 aria-selected="false" aria-controls="panel-reeves">Reeves</button>
+                                            <button class="tab-button" type="button" data-tab="furps" role="tab"
+                                                aria-selected="false" aria-controls="panel-furps">FURPS</button>
                                         </div>
                                         <div class="tab-panels">
                                             <section id="panel-lori" class="tab-panel is-active" data-tab-panel="lori"
@@ -234,6 +236,36 @@
                                                 </div>
                                                 <button class="rubric-link" type="button"
                                                     data-modal-open="rubrica-reeves-modal">Abrir rúbrica Reeves</button>
+                                            </section>
+                                            <section id="panel-furps" class="tab-panel" data-tab-panel="furps"
+                                                role="tabpanel">
+                                                <h2>FURPS</h2>
+                                                <div class="info-block">
+                                                    <p><strong>Título:</strong> FURPS</p>
+                                                    <p><strong>Descripción:</strong> El modelo FURPS propuesto por Hewlett Packard y Robert Grady (1987) evalúa la calidad del software considerando atributos funcionales y no funcionales, aplicables a los Recursos Educativos Digitales desde una perspectiva técnica y operativa.</p>
+                                                    <h3>Criterios de evaluación</h3>
+                                                    <ul class="criteria-list">
+                                                        <li><strong>Funcionalidad:</strong> Cumplimiento y ejecución de las funciones del recurso.</li>
+                                                        <li><strong>Usabilidad:</strong> Facilidad de navegación, claridad de la interfaz y comprensión de instrucciones.</li>
+                                                        <li><strong>Confiabilidad:</strong> Estabilidad del sistema y continuidad del funcionamiento.</li>
+                                                        <li><strong>Rendimiento:</strong> Tiempo, fluidez en la ejecución y uso eficiente de los recursos tecnológicos.</li>
+                                                        <li><strong>Soporte:</strong> Disponibilidad de ayudas o tutoriales, documentos del recurso y posible mantenimiento.</li>
+                                                    </ul>
+                                                    <p><strong>Escala de evaluación:</strong> Escalas de cumplimiento o niveles de satisfacción. Escala de 3 niveles: Cumple (3), Cumple parcialmente (2), No cumple (1).</p>
+                                                    <p><strong>Metodología:</strong> Revisión técnica del recurso mediante la verificación del funcionamiento, estabilidad, facilidad de uso y soporte técnico del sistema.</p>
+                                                    <p><strong>Instrumento de valoración:</strong> Lista de verificación técnica.</p>
+                                                    <div style="margin-top: 16px;">
+                                                        <p><strong>Puntaje máximo:</strong> 15 puntos</p>
+                                                        <p><strong>Interpretación de resultados:</strong></p>
+                                                        <ul class="criteria-list">
+                                                            <li>13–15: Alta calidad técnica</li>
+                                                            <li>9–12: Calidad técnica media</li>
+                                                            <li>5–8: Baja calidad técnica</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <button class="rubric-link" type="button"
+                                                    data-modal-open="rubrica-furps-modal">Abrir rúbrica FURPS</button>
                                             </section>
                                         </div>
                                     </div>
@@ -401,6 +433,12 @@
     <div class="modal" id="rubrica-reeves-modal" aria-hidden="true" role="dialog" aria-modal="true"
         aria-labelledby="rubrica-reeves-title">
         <!-- Contenido cargado desde components/modal-reeves.html -->
+    </div>
+
+    <!-- Modal FURPS - Cargado dinámicamente -->
+    <div class="modal" id="rubrica-furps-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="rubrica-furps-title">
+        <!-- Contenido cargado desde components/modal-furps.html -->
     </div>
 
     <!-- Scripts organizados por funcionalidad -->
