@@ -1,0 +1,269 @@
+<div class="modal-backdrop" data-modal-close></div>
+<div class="modal-dialog" role="document">
+    <div class="modal-header">
+        <h2 id="rubrica-boehm-title">Evaluación Modelo Boehm</h2>
+        <div class="modal-actions">
+            <button class="btn-print" type="button" onclick="printRubric('rubrica-boehm-modal')" aria-label="Imprimir matriz">
+                <span>🖨️</span> Imprimir
+            </button>
+            <button class="modal-close" type="button" data-modal-close aria-label="Cerrar">✕</button>
+        </div>
+    </div>
+    <div class="modal-body">
+        <p class="lead">Modelo métrico o lista técnica de evaluación del software - Modelo Boehm (1978)</p>
+
+        <div class="rubric-block">
+            <h3>Información del Recurso Educativo Digital</h3>
+            <table class="rubric-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Nombre del recurso educativo digital:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-nombre-recurso"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grado de aplicación:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-grado"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Área de conocimiento:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-area"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Objetivos de aprendizaje:</strong></td>
+                        <td colspan="3"><textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;" name="boehm-objetivos" rows="2"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nombre del repositorio:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-repositorio"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>URL del recurso educativo digital:</strong></td>
+                        <td colspan="3"><input type="url" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-url"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Descripción del recurso educativo digital</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="boehm-descripcion" rows="4" placeholder="Escriba la descripción del recurso educativo digital..."></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Modelo de evaluación</h3>
+            <p class="rubric-meta"><strong>Modelo:</strong> Boehm (1978)</p>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="boehm-modelo-descripcion" rows="3" placeholder="Descripción del modelo..."></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Criterios de evaluación del modelo</h3>
+            <p class="rubric-meta">Escala de valoración: 3 = Alto nivel | 2 = Nivel medio | 1 = Nivel bajo</p>
+            <p class="rubric-meta" style="margin-top: 8px;">
+                <strong>Puntaje máximo:</strong> 18 puntos<br>
+                <strong>Interpretación:</strong> 15–18 Alta calidad estructural | 10–14 Calidad media | 6–9 Baja calidad
+            </p>
+            
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Criterio</th>
+                        <th style="width: 20%;">3 - Alto</th>
+                        <th style="width: 20%;">2 - Medio</th>
+                        <th style="width: 20%;">1 - Bajo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Corrección</strong></td>
+                        <td>
+                            <input type="radio" name="boehm-c1" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Cumple todos los requisitos</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c1" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Cumple parcialmente</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c1" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">No cumple</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="boehm-c1-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>2. Confiabilidad</strong></td>
+                        <td>
+                            <input type="radio" name="boehm-c2" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Estable y seguro</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c2" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Fallos ocasionales</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c2" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Inestable</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="boehm-c2-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>3. Eficiencia</strong></td>
+                        <td>
+                            <input type="radio" name="boehm-c3" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Uso óptimo de recursos</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c3" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Uso moderado</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c3" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Uso ineficiente</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="boehm-c3-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>4. Usabilidad</strong></td>
+                        <td>
+                            <input type="radio" name="boehm-c4" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Fácil aprendizaje del sistema</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c4" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Curva media</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c4" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Difícil uso</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="boehm-c4-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>5. Mantenibilidad</strong></td>
+                        <td>
+                            <input type="radio" name="boehm-c5" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Fácil de actualizar</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c5" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Actualización limitada</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c5" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Difícil mantenimiento</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="boehm-c5-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>6. Portabilidad</strong></td>
+                        <td>
+                            <input type="radio" name="boehm-c6" value="3">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Compatible con varios entornos</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c6" value="2">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Compatibilidad parcial</span>
+                        </td>
+                        <td>
+                            <input type="radio" name="boehm-c6" value="1">
+                            <span style="font-size: 0.85rem; display: block; margin-top: 4px; color: var(--ink-soft);">Baja compatibilidad</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="background: #fafaf8; text-align: left; padding: 8px;">
+                            <strong style="color: var(--color5); font-size: 0.9rem;">Notas:</strong><br>
+                            <textarea style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.9rem; resize: vertical; margin-top: 4px;" name="boehm-c6-notas" rows="2"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Resultados de la evaluación</h3>
+            <table class="rubric-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Puntuación final:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-puntuacion" placeholder="Ej: 15/18 puntos"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nivel de calidad estructural:</strong></td>
+                        <td colspan="3">
+                            <select style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-nivel">
+                                <option value="">Seleccione...</option>
+                                <option value="alta">Alta calidad estructural (15-18 puntos)</option>
+                                <option value="media">Calidad media (10-14 puntos)</option>
+                                <option value="baja">Baja calidad (6-9 puntos)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Conclusiones de la evaluación:</strong></td>
+                        <td colspan="3"><textarea style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="boehm-conclusiones" rows="4"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <table class="rubric-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Elaborado por:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-elaborado" placeholder="Nombre del(os) estudiante(s)"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revisado por:</strong></td>
+                        <td colspan="3"><input type="text" style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;" name="boehm-revisado" placeholder="Nombre del profesor"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rubric-block">
+            <p style="text-align: center; font-style: italic; color: var(--ink-soft); margin: 12px 0;">
+                Modelo Boehm (Barry Boehm, 1978)
+            </p>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Ventajas de la aplicación del modelo de evaluación:</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="boehm-ventajas" rows="3"></textarea>
+        </div>
+
+        <div class="rubric-block">
+            <h3>Desventajas de la aplicación del modelo de evaluación:</h3>
+            <textarea style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 0.95rem; resize: vertical;" name="boehm-desventajas" rows="3"></textarea>
+        </div>
+    </div>
+</div>

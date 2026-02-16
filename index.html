@@ -85,6 +85,8 @@
                                                 aria-selected="false" aria-controls="panel-reeves">Reeves</button>
                                             <button class="tab-button" type="button" data-tab="furps" role="tab"
                                                 aria-selected="false" aria-controls="panel-furps">FURPS</button>
+                                            <button class="tab-button" type="button" data-tab="boehm" role="tab"
+                                                aria-selected="false" aria-controls="panel-boehm">Boehm</button>
                                         </div>
                                         <div class="tab-panels">
                                             <section id="panel-lori" class="tab-panel is-active" data-tab-panel="lori"
@@ -267,6 +269,37 @@
                                                 <button class="rubric-link" type="button"
                                                     data-modal-open="rubrica-furps-modal">Abrir rúbrica FURPS</button>
                                             </section>
+                                            <section id="panel-boehm" class="tab-panel" data-tab-panel="boehm"
+                                                role="tabpanel">
+                                                <h2>Boehm</h2>
+                                                <div class="info-block">
+                                                    <p><strong>Título:</strong> Boehm</p>
+                                                    <p><strong>Descripción:</strong> El modelo propuesto por Barry Boehm (1978) se centra en la evaluación de la calidad del software desde una perspectiva estructural, analizando atributos que garantizan la eficiencia, estabilidad y sostenibilidad del recurso digital.</p>
+                                                    <h3>Criterios de evaluación</h3>
+                                                    <ul class="criteria-list">
+                                                        <li><strong>Corrección:</strong> Cumplimiento de requisitos funcionales, precisión en la ejecución y ausencia de fallos críticos.</li>
+                                                        <li><strong>Confiabilidad:</strong> Frecuencia de errores, consistencia del funcionamiento y seguridad del sistema.</li>
+                                                        <li><strong>Eficiencia:</strong> Optimización del uso de recursos, velocidad de respuesta y consumo adecuado de memoria y procesamiento.</li>
+                                                        <li><strong>Usabilidad:</strong> Facilidad de aprendizaje del sistema, claridad visual y accesibilidad de funciones.</li>
+                                                        <li><strong>Mantenibilidad:</strong> Facilidad de actualización, modularidad del sistema y facilidad de corrección de errores.</li>
+                                                        <li><strong>Portabilidad:</strong> Adaptación a distintos dispositivos, compatibilidad con diferentes sistemas y flexibilidad de instalación o acceso.</li>
+                                                    </ul>
+                                                    <p><strong>Escala de evaluación:</strong> Escalas técnicas de calidad o métricas de cumplimiento de requisitos. Escala de 3 niveles: Alto nivel (3), Nivel medio (2), Nivel bajo (1).</p>
+                                                    <p><strong>Metodología:</strong> Análisis sistemático de los componentes del recurso digital para identificar su comportamiento técnico y su capacidad de adaptación a distintos entornos tecnológicos.</p>
+                                                    <p><strong>Instrumento de valoración:</strong> Modelo métrico o lista técnica de evaluación del software.</p>
+                                                    <div style="margin-top: 16px;">
+                                                        <p><strong>Puntaje máximo:</strong> 18 puntos</p>
+                                                        <p><strong>Interpretación de resultados:</strong></p>
+                                                        <ul class="criteria-list">
+                                                            <li>15–18: Alta calidad estructural</li>
+                                                            <li>10–14: Calidad media</li>
+                                                            <li>6–9: Baja calidad</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <button class="rubric-link" type="button"
+                                                    data-modal-open="rubrica-boehm-modal">Abrir rúbrica Boehm</button>
+                                            </section>
                                         </div>
                                     </div>
                                 </section>
@@ -439,6 +472,12 @@
     <div class="modal" id="rubrica-furps-modal" aria-hidden="true" role="dialog" aria-modal="true"
         aria-labelledby="rubrica-furps-title">
         <!-- Contenido cargado desde components/modal-furps.html -->
+    </div>
+
+    <!-- Modal Boehm - Cargado dinámicamente -->
+    <div class="modal" id="rubrica-boehm-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="rubrica-boehm-title">
+        <!-- Contenido cargado desde components/modal-boehm.html -->
     </div>
 
     <!-- Scripts organizados por funcionalidad -->

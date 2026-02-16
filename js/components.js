@@ -22,4 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadComponent('components/modal-coda.html', 'rubrica-coda-modal');
     loadComponent('components/modal-reeves.html', 'rubrica-reeves-modal');
     loadComponent('components/modal-furps.html', 'rubrica-furps-modal');
+    loadComponent('components/modal-boehm.html', 'rubrica-boehm-modal');
 });
